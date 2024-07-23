@@ -1,0 +1,107 @@
+/* Landing Page */
+
+section.landing-page {
+  background-image: url("../images/solar-panels-meadow\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: 4.1rem;
+  text-align: center;
+}
+
+.line-num {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+  color: var(--white-color);
+}
+
+.line-num .line {
+  display: flex;
+}
+
+.line-num .line span {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: var(--white-color);
+}
+
+.line-num .line span:nth-child(2) {
+  background-color: #575757;
+}
+
+.landing-title {
+  color: var(--white-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.landing-info {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.landing-btns .landing-btn {
+  padding: 0.7rem 1.6rem;
+  border-radius: 4rem;
+  margin-right: 1rem;
+  color: var(--white-color);
+  font-size: 1.1rem;
+  transition: opacity 0.3s;
+}
+
+.landing-btns .landing-btn:hover,
+.reapir-wrapper .reapir-btn:hover {
+  opacity: 0.8;
+}
+
+.landing-btns .landing-btn:nth-child(1) {
+  background-color: var(--main-color);
+}
+
+.landing-btns .landing-btn:nth-child(2) {
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+@media (min-width: 992px) {
+  section.landing-page {
+    text-align: left;
+  }
+
+  .landing-page-wrapper {
+    width: 60%;
+  }
+
+  .line-num {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    color: var(--white-color);
+  }
+
+  .line-num .line span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--white-color);
+  }
+
+  .landing-title {
+    font-size: 2.5rem;
+  }
+
+  .landing-info {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+}
+
+/* End Landing Page */

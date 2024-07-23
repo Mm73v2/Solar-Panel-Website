@@ -1,0 +1,85 @@
+/* Introduction Section */
+
+.introduction-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction-content .introduction-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.introduction-content .introduction-info {
+  color: #28292a;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.introduction-content .introduction-list {
+  margin-bottom: 2rem;
+}
+
+.introduction-content .introduction-list li {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.introduction-content .introduction-list li span {
+  margin-right: 0.6rem;
+  color: #92c551;
+}
+
+.introduction-image {
+  position: relative;
+}
+
+.introduction-image .introduction-img img {
+  max-width: 100%;
+}
+
+.introduction-image .introduction-image-card {
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 50%;
+  text-align: left;
+  position: absolute;
+  left: 25%;
+  bottom: -50px;
+}
+
+.introduction-image .introduction-image-card img {
+  width: 120px;
+}
+
+@media (min-width: 992px) {
+  .introduction-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .introduction-content {
+    width: 55%;
+  }
+  .introduction-image {
+    text-align: right;
+    width: 42%;
+  }
+
+  .introduction-image .introduction-image-card {
+    bottom: -10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction-image .introduction-image-card {
+    left: 12%;
+    bottom: 15%;
+    width: 40%;
+  }
+}
+
+/* End Introduction Section */

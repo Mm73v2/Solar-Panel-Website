@@ -1,0 +1,111 @@
+/* Navbar */
+.main-header {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-wrapper .nav-toggler {
+  background-color: transparent;
+}
+
+.header-wrapper .nav-toggler i {
+  font-size: 1.5rem;
+  color: var(--white-color);
+}
+
+.header-wrapper .navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  width: 100%;
+  top: 9%;
+  left: 0;
+  background-color: var(--main-color);
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-wrapper .navbar.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-wrapper .navbar .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-wrapper .navbar .nav-links li {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header-wrapper .navbar .nav-links li a {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 7px;
+}
+
+.navbar .nav-links li a.active,
+.navbar .nav-links li a:hover {
+  background-color: #0a8c7e;
+  border-bottom: 3px solid #076258;
+  transition: all 0.3s;
+}
+
+.header-wrapper .header-contact {
+  color: var(--white-color);
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .main-header {
+    padding: 0;
+  }
+  .header-wrapper .nav-toggler {
+    display: none;
+  }
+  .header-wrapper .navbar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header-wrapper .navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .header-wrapper .navbar .nav-links li {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .header-wrapper .header-contact {
+    text-align: right;
+  }
+  .header-wrapper .header-contact p:nth-child(2) {
+    font-weight: bold;
+  }
+}
+/* End Navbar */

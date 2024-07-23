@@ -1,0 +1,63 @@
+/* Values Section */
+.values-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.values-header-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.values-header-info {
+  color: #28292a;
+}
+
+.values-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.values-item {
+  border: 1px solid var(--main-color);
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.values-item i {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-block: 2rem;
+}
+
+.values-item .values-item-title {
+  margin-bottom: 1rem;
+}
+
+.values-item .values-item-info {
+  color: #28292a;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 992px) {
+  .values-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .values-item {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .values-item {
+    width: 30%;
+  }
+}
+/* End Values Section */

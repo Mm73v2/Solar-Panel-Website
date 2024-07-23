@@ -1,0 +1,46 @@
+/* Call To Action Section */
+section.call-to-action {
+  background-image: url("../images/8116\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  margin-top: 5rem;
+  height: 500px;
+  position: relative;
+}
+
+.call-to-action-wrapper {
+  color: var(--white-color);
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.call-to-action-wrapper .call-to-action-title {
+  margin-bottom: 1rem;
+}
+
+.call-to-action-wrapper .call-to-action-info {
+  margin-bottom: 1rem;
+}
+
+.call-to-action-wrapper .call-to-action-btn {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  width: fit-content;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  .call-to-action-wrapper .call-to-action-title {
+    font-size: 2rem;
+  }
+
+  .call-to-action-wrapper .call-to-action-info {
+    font-size: 1.2rem;
+  }
+}
+/* End Call To Action Section */
